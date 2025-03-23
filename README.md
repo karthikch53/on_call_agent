@@ -48,6 +48,10 @@ ollama show llama3.2
 
 ```
 
+## Workflow
+
+![On-call agent Workflow](workflow.png "On-call agent Workflow")
+
 
 
 
