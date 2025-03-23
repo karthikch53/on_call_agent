@@ -1,0 +1,277 @@
+[
+    {
+        "issue": "I'm unable to log in to my account.",
+        "solution": "Ensure the user is using the correct credentials and the account is not locked.",
+        "category": "login"
+    },
+    {
+        "issue": "Login keeps failing with an unknown error.",
+        "solution": "Investigate logs for authentication errors and retry.",
+        "category": "login"
+    },
+    {
+        "issue": "I can't sign in after resetting my password.",
+        "solution": "Check if the password reset was successful and verify token validity.",
+        "category": "login"
+    },
+    {
+        "issue": "The login page keeps reloading.",
+        "solution": "Check browser compatibility and clear cache/cookies.",
+        "category": "login"
+    },
+    {
+        "issue": "I get stuck on the loading spinner after entering credentials.",
+        "solution": "Look into frontend auth callback handling.",
+        "category": "login"
+    },
+    {
+        "issue": "Logging in redirects me to a blank page.",
+        "solution": "Investigate frontend routing after login.",
+        "category": "login"
+    },
+    {
+        "issue": "I’m stuck at the login screen despite entering correct credentials.",
+        "solution": "Check backend auth response and session handling.",
+        "category": "login"
+    },
+    {
+        "issue": "Two accounts seem to be linked incorrectly when I try to login.",
+        "solution": "Investigate user ID mapping in authentication service.",
+        "category": "login"
+    },
+    {
+        "issue": "My account is marked inactive when logging in.",
+        "solution": "Verify account status in admin panel.",
+        "category": "login"
+    },
+    {
+        "issue": "I’m getting a network error when logging in.",
+        "solution": "Check API gateway logs and DNS resolution.",
+        "category": "login"
+    },
+    {
+        "issue": "The login button does nothing.",
+        "solution": "Inspect browser console and JS network calls.",
+        "category": "login"
+    },
+    {
+        "issue": "I never received the verification email.",
+        "solution": "Ask the user to check spam folder and resend from admin panel.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "The verification link is expired.",
+        "solution": "Generate a new verification token and email it again.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "The verification link says 'invalid token'.",
+        "solution": "Validate the format and expiration of the token.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "I clicked the email link but nothing happened.",
+        "solution": "Check browser compatibility and JS errors.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "My email was verified but the app still says unverified.",
+        "solution": "Check backend user verification status and cache.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "The verification email was sent to the wrong address.",
+        "solution": "Confirm user profile email and resend.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "I mistyped my email and didn’t get the link.",
+        "solution": "Update the email in the profile and regenerate verification.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "The email has broken formatting.",
+        "solution": "Ensure HTML rendering is correct and content is escaped.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "I received two verification emails.",
+        "solution": "Confirm only one token is active and invalidate old ones.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "I clicked the link but it redirected to a 404 page.",
+        "solution": "Verify routing logic and token parsing on the frontend.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "My verification link works on desktop but not on mobile.",
+        "solution": "Check for responsive or redirect issues in mobile view.",
+        "category": "email_verification"
+    },
+    {
+        "issue": "I was charged twice this month.",
+        "solution": "Look into the billing logs for duplicate charges.",
+        "category": "billing"
+    },
+    {
+        "issue": "Why was I billed $49? I thought this was free.",
+        "solution": "Check subscription tier and notify user of trial expiration.",
+        "category": "billing"
+    },
+    {
+        "issue": "I canceled but still got billed.",
+        "solution": "Check cancellation status and refund if needed.",
+        "category": "billing"
+    },
+    {
+        "issue": "Can I switch to a yearly plan?",
+        "solution": "Guide the user to pricing settings to update plan.",
+        "category": "billing"
+    },
+    {
+        "issue": "My receipt has the wrong company name.",
+        "solution": "Allow custom billing info edits in admin panel.",
+        "category": "billing"
+    },
+    {
+        "issue": "The invoice I received is missing tax details.",
+        "solution": "Review billing system's tax calculation settings.",
+        "category": "billing"
+    },
+    {
+        "issue": "I need a refund for this month's charge.",
+        "solution": "Verify charge eligibility and initiate refund.",
+        "category": "billing"
+    },
+    {
+        "issue": "Billing history is not showing the latest charges.",
+        "solution": "Check cache invalidation and update schedule.",
+        "category": "billing"
+    },
+    {
+        "issue": "The payment method I used was declined.",
+        "solution": "Prompt user to update their billing information.",
+        "category": "billing"
+    },
+    {
+        "issue": "I accidentally selected the wrong plan.",
+        "solution": "Allow plan downgrade and partial refunds.",
+        "category": "billing"
+    },
+    {
+        "issue": "I want to pause my subscription temporarily.",
+        "solution": "Offer pause/resume functionality in subscription settings.",
+        "category": "billing"
+    },
+    {
+        "issue": "I received a password reset email I didn't request.",
+        "solution": "Check for possible compromise and force logout sessions.",
+        "category": "security"
+    },
+    {
+        "issue": "My account got hacked.",
+        "solution": "Freeze the account and investigate recent logins.",
+        "category": "security"
+    },
+    {
+        "issue": "I'm getting 2FA errors.",
+        "solution": "Reset the 2FA settings and re-enroll user.",
+        "category": "security"
+    },
+    {
+        "issue": "The magic login link doesn't work.",
+        "solution": "Check for expired token and reissue.",
+        "category": "security"
+    },
+    {
+        "issue": "I'm locked out after too many login attempts.",
+        "solution": "Unlock the account and notify the user.",
+        "category": "security"
+    },
+    {
+        "issue": "Login fails when using SSO.",
+        "solution": "Check identity provider logs and token audience.",
+        "category": "security"
+    },
+    {
+        "issue": "My session keeps expiring too quickly.",
+        "solution": "Increase session TTL and check token validity.",
+        "category": "security"
+    },
+    {
+        "issue": "I lost access to my authenticator app.",
+        "solution": "Verify identity and provide recovery method.",
+        "category": "security"
+    },
+    {
+        "issue": "I keep getting signed out automatically.",
+        "solution": "Check token rotation and cookie expiry settings.",
+        "category": "security"
+    },
+    {
+        "issue": "My security settings got reset after the update.",
+        "solution": "Restore from backup and review update script.",
+        "category": "security"
+    },
+    {
+        "issue": "I see a new device login I don't recognize.",
+        "solution": "Confirm IP/device fingerprinting and alert the user.",
+        "category": "security"
+    },
+    {
+        "issue": "The app is really slow today.",
+        "solution": "Check for service degradation and active incidents.",
+        "category": "performance"
+    },
+    {
+        "issue": "Page takes 10+ seconds to load.",
+        "solution": "Optimize slow DB queries and use caching.",
+        "category": "performance"
+    },
+    {
+        "issue": "Uploading files is very sluggish.",
+        "solution": "Investigate S3 latency or frontend compression.",
+        "category": "performance"
+    },
+    {
+        "issue": "Search results are timing out.",
+        "solution": "Check Elasticsearch query performance.",
+        "category": "performance"
+    },
+    {
+        "issue": "The dashboard hangs indefinitely.",
+        "solution": "Check client logs and websocket connection health.",
+        "category": "performance"
+    },
+    {
+        "issue": "Report generation takes forever.",
+        "solution": "Optimize batch job performance and pagination.",
+        "category": "performance"
+    },
+    {
+        "issue": "Mobile app performance is much worse than desktop.",
+        "solution": "Profile frontend rendering and API usage on mobile.",
+        "category": "performance"
+    },
+    {
+        "issue": "My screen freezes when scrolling down.",
+        "solution": "Reduce DOM nodes and lazy-load heavy components.",
+        "category": "performance"
+    },
+    {
+        "issue": "Every action takes 5 seconds or more.",
+        "solution": "Profile frontend and backend trace for latency.",
+        "category": "performance"
+    },
+    {
+        "issue": "Graphs load very slowly.",
+        "solution": "Cache aggregation results and optimize data joins.",
+        "category": "performance"
+    },
+    {
+        "issue": "It’s fast in staging but slow in production.",
+        "solution": "Compare infra configs and DB indexes across environments.",
+        "category": "performance"
+    }
+]
