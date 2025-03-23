@@ -5,10 +5,12 @@ from tools.knowledge_base import KnowledgeBaseTool
 from tools.llm_tool import LLMTool
 from typing import TypedDict
 
+
 class AgentState(TypedDict):
     error: str
     file: str
     action_taken: str
+
 
 class OnCallSupportAgent:
 
@@ -33,14 +35,12 @@ class OnCallSupportAgent:
         print(f"Exiting route_to_codeowners tool. State: {new_state}")
         return new_state
 
-
     def search_runbooks(self, state):
         print(f"Entering search_runbooks tool. State: {state}")
         result = self.runbook_tool.search_runbooks(state["error"])
         new_state = {**state, "action_taken": result}
         print(f"Exiting search_runbooks tool. State: {new_state}")
         return new_state
-
 
     def search_kb(self, state):
         print(f"Entering search_kb tool. State: {state}")
@@ -67,6 +67,5 @@ def build_workflow():
     builder.set_finish_point("runbook")
     builder.set_finish_point("knowledge")
     app = builder.compile()
-
 
     return app
