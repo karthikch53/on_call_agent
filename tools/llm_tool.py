@@ -38,23 +38,23 @@ class LLMTool:
         ```
 
         Based on the error and file `{state['file']}`, decide what to do:
-        - Return "route" if this clearly belongs to a specific code owner
-        - Return "runbook" if it looks like a known issue with remediation steps
-        - Return "knowledge" if it needs deeper investigation or past incident context
+        - Return route if this clearly belongs to a specific code owner
+        - Return runbook if it looks like a known issue with remediation steps
+        - Return knowledge if it needs deeper investigation or past incident context
         
         Return your response in the following format:
         
         <decision> | <brief explanation>
         
         Where:
-        - <decision> is one of "route" or "runbook" or "knowledge"  
+        - <decision> is one of route or runbook or knowledge 
         - <brief explanation> is 1-2 sentences explaining why you chose that action
         
         """
 
         payload = {
             "stream": False,
-            "model": "llama3.2",
+            "model": "gemma3:12b",
             "prompt": prompt
         }
 
