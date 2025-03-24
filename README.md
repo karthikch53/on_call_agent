@@ -27,6 +27,7 @@ Ollama
 https://github.com/ollama/ollama
 
 ollama run llama3.2
+ollama run gemma3:12b
 
 ollama show llama3.2
   Model
@@ -45,6 +46,21 @@ ollama show llama3.2
     LLAMA 3.2 COMMUNITY LICENSE AGREEMENT
     Llama 3.2 Version Release Date: September 25, 2024
 
+ollama show gemma3:12b
+Model
+    architecture        gemma3
+    parameters          12.2B
+    context length      8192
+    embedding length    3840
+    quantization        Q4_K_M
+
+  Parameters
+    temperature    0.1
+    stop           "<end_of_turn>"
+
+  License
+    Gemma Terms of Use
+    Last modified: February 21, 2024
 
 ```
 
